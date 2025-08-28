@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency_hotline</title>
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <div class="flex justify-between items-center p-3">
+            <div class="flex ml-8 items-center">
+                <img src="./assets/logo.png" class="w-10 h-10">
+                <h3 class="ml-3 text-[#006747] font-extrabold">Emergency<br/>Service</h3>
+            </div>
+
+            <div class="flex gap-3 mr-8">
+                <button class="btn bg-[#41FF6B1A] rounded-3xl font-bold"><span>0</span><img src="./assets/heart.png" class="w-5 h-5"></button>
+                <button class="btn bg-[#41FF6B1A] rounded-3xl font-bold"><span>100</span><img src="./assets/coin.png" class="w-5 h-5"></button>
+                <button class="btn bg-[#00A63E] rounded-3xl text-white">2 Copy</button>
+            </div>
+        </div>
+
+        <div class="w-full h-auto bg-[linear-gradient(to_right,#013223FF_0%,#006747FF_50%,#013223FF_100%)] p-4">
+            <img src="./assets/logo-dark.png" class="w-14 h-14 mx-auto mb-2">
+            <h2 class="text-center text-white text-xl font-bold">Emergency Service Directory</h2>
+            <p class="text-center text-white font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </header>
+
+
+    <main class="bg-[#F2F2F2] p-4 gap-4 grid grid-cols-[1fr_300px] min-h-screen">
+        <!-- left_side_grid -->
+        <div class="grid grid-cols-3 gap-4 auto-rows-[240px]">
+
+            <!-- card_1 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/emergency.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">National Emergency Number</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">National Emergency</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">999</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">All</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_2 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/police.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Police Helpline Number</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Police</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">999</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Police</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_3 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/fire-service.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Fire Service Number</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Fire Service</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">999</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Fire</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_4 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/ambulance.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Ambulance Service</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Ambulance</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">1994-999999</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Health</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_5 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/women-support.png" class="w-18 h-12 -ml-5">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Women & Child Helpline</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Women & Child Helpline</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">109</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Help</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_6 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/Anti-Corruption_Helpline.png" class="w-15 h-10 -ml-3">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Anti-Corruption Helpline</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Anti-Corruption</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">106</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Govt.</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_7 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/electric.png" class="w-15 h-10 -ml-3">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Electricity Helpline</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Electricity Outage</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">16216</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Electricity</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_8 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/brac.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Brac Helpline</h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Brac</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">16445</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">NGO</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+            <!-- card_9 -->
+            <div class="bg-white shadow-md rounded-xl p-4">
+                <div class="flex justify-between items-center">
+                    <img src="./assets/Bangladesh-Railway.png" class="w-10 h-10">
+                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <h2 class="text-lg font-bold hind_madurai_font">Bangladesh Railway Helpline </h2>
+                <p class="text-gray-500 text-sm agbalumo_font">Bangladesh Railway</p>
+                <h2 class="text-2xl font-bold mt-1 agbalumo_font">163</h2>
+                <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Travel</span>
+                <div class="grid grid-cols-2 mt-4 gap-3">
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- right_side -->
+        <div class="bg-white shadow-md rounded-xl p-4 w-[300px] h-[750px] flex flex-col">
+            <div class="flex justify-between items-center my-3">
+                <h2 class="agbalumo_font text-lg font-semibold"><i class="fa-regular fa-clock"></i><span> Call History</span></h2>
+                <button class="btn bg-[#00A63E] rounded-3xl text-white">Clear</button>
+            </div>
+
+            <!-- card-1 -->
+            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
+                <div>
+                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
+                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
+                </div>
+                <div>
+                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
+                </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
+                <div>
+                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
+                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
+                </div>
+                <div>
+                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
+                </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
+                <div>
+                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
+                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
+                </div>
+                <div>
+                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
+                </div>
+            </div>
+
+            <!-- card_4 -->
+            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
+                <div>
+                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
+                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
+                </div>
+                <div>
+                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
