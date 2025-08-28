@@ -31,7 +31,7 @@
             </div>
 
             <div class="flex justify-center md:justify-end mt-4 md:mt-0 gap-3 md:mr-8">
-                <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span>0</span><img src="./assets/heart.png" class="w-5 h-5"></button>
+                <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span id="heartCount">0</span><img src="./assets/heart.png" class="w-5 h-5"></button>
                 <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span>100</span><img src="./assets/coin.png" class="w-5 h-5"></button>
                 <button class="btn border-none bg-[#00A63E] rounded-3xl text-white">2 Copy</button>
             </div>
@@ -53,7 +53,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">National Emergency Number</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">National Emergency</p>
@@ -69,7 +69,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/police.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Police Helpline Number</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Police</p>
@@ -85,7 +85,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/fire-service.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Fire Service Number</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Fire Service</p>
@@ -101,7 +101,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/ambulance.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Ambulance Service</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Ambulance</p>
@@ -117,7 +117,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/women-support.png" class="w-18 h-12 -ml-5">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Women & Child Helpline</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Women & Child Helpline</p>
@@ -133,7 +133,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Anti-Corruption_Helpline.png" class="w-15 h-10 -ml-3">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Anti-Corruption Helpline</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Anti-Corruption</p>
@@ -149,7 +149,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/electric.png" class="w-15 h-10 -ml-3">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Electricity Helpline</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Electricity Outage</p>
@@ -165,7 +165,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/brac.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Brac Helpline</h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Brac</p>
@@ -181,7 +181,7 @@
             <div class="bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Bangladesh-Railway.png" class="w-10 h-10">
-                    <button class="text-gray-400 w-10 h-10"><i class="fa-regular fa-heart"></i></button>
+                    <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <h2 class="text-lg font-bold hind_madurai_font">Bangladesh Railway Helpline </h2>
                 <p class="text-gray-500 text-sm agbalumo_font">Bangladesh Railway</p>
@@ -249,5 +249,6 @@
 
     </main>
 
+    <script src="./index.js"></script>
 </body>
 </html>
