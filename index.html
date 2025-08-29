@@ -33,7 +33,7 @@
             <div class="flex justify-center md:justify-end mt-4 md:mt-0 gap-3 md:mr-8">
                 <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span id="heartCount">0</span><img src="./assets/heart.png" class="w-5 h-5"></button>
                 <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span id="coinCount">100</span><img src="./assets/coin.png" class="w-5 h-5"></button>
-                <button class="btn border-none bg-[#00A63E] rounded-3xl text-white">2 Copy</button>
+                <button id="copy_Counter_Btn" class="btn border-none bg-[#00A63E] rounded-3xl text-white">0 Copy</button>
             </div>
         </div>
 
@@ -60,7 +60,7 @@
                 <h2 class="text-2xl font-bold mt-1 agbalumo_font">999</h2>
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">All</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
-                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
+                    <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500 copyBtn"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
                     <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
@@ -198,52 +198,10 @@
         <div class="bg-white shadow-lg rounded-xl p-4 w-auto h-auto flex flex-col">
             <div class="flex md:flex-row flex-col justify-between items-center my-3">
                 <h2 class="agbalumo_font text-lg font-semibold"><i class="fa-regular fa-clock"></i><span> Call History</span></h2>
-                <button class="btn bg-[#00A63E] rounded-3xl text-white md:mt-0 mt-4">Clear</button>
+                <button id="clear_history_btn" class="btn bg-[#00A63E] rounded-3xl text-white md:mt-0 mt-4">Clear</button>
             </div>
 
-            <!-- card-1 -->
-            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
-                <div>
-                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
-                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
-                </div>
-                <div>
-                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
-                </div>
-            </div>
-
-            <!-- card-2 -->
-            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
-                <div>
-                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
-                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
-                </div>
-                <div>
-                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
-                </div>
-            </div>
-
-            <!-- card-3 -->
-            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
-                <div>
-                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
-                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
-                </div>
-                <div>
-                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
-                </div>
-            </div>
-
-            <!-- card_4 -->
-            <div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
-                <div>
-                    <h2 class="inter_font font-semibold">Fire Service Number</h2>
-                    <p class="hind_madurai_font text-gray-500 text-sm">999</p>
-                </div>
-                <div>
-                    <p class="hind_madurai_font text-gray-500 text-sm">11:36:58 AM</p>
-                </div>
-            </div>
+            <div id="call_history"></div>
 
         </div>
 

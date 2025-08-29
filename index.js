@@ -13,8 +13,10 @@ document.querySelectorAll(".heartBtn").forEach(btn => {
 })
 
 
-// coin count
+// coin count and call history
 const coin_count = document.querySelector("#coinCount")
+const history_container = document.querySelector("#call_history")
+const clear_btn = document.querySelector("#clear_history_btn")
 
 document.querySelectorAll(".callBtn").forEach(btn => {
     btn.addEventListener("click", function(e){
@@ -30,6 +32,21 @@ document.querySelectorAll(".callBtn").forEach(btn => {
             const sub_title = card_info.querySelector("p").innerText
             const number = card_info.querySelectorAll("h2")[1].innerText
 
+            const time = new Date().toLocaleTimeString()
+
+            const history_card = document.createElement("div")
+            history_card.innerHTML =`<div class="bg-[#FAFAFA] rounded-xl p-2 flex justify-between items-center my-1">
+                                        <div>
+                                            <h2 class="inter_font font-semibold">${sub_title}</h2>
+                                            <p class="hind_madurai_font text-gray-500 text-sm">${number}</p>
+                                        </div>
+                                        <div>
+                                            <p class="hind_madurai_font text-gray-500 text-sm">${time}</p>
+                                        </div>
+                                    </div>`
+
+            history_container.prepend(history_card);
+            
             alert(`📞${sub_title} ${number}`)
         }
 
@@ -38,3 +55,7 @@ document.querySelectorAll(".callBtn").forEach(btn => {
         }
     })
 })
+
+clear_btn.addEventListener("click", () =>{
+    history_container.innerHTML = "";
+});
