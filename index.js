@@ -81,9 +81,9 @@ document.querySelectorAll(".copyBtn").forEach(btn =>{
             alert(`Number copied: ${phone}`)
         })
 
-        .catch(err => {
-            console.error("Failed to copy: ", err)
-        })
+        // .catch(err => {
+        //     console.error("Failed to copy: ", err)
+        // })
     })
 })
 
