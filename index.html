@@ -32,7 +32,7 @@
 
             <div class="flex justify-center md:justify-end mt-4 md:mt-0 gap-3 md:mr-8">
                 <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span id="heartCount">0</span><img src="./assets/heart.png" class="w-5 h-5"></button>
-                <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span>100</span><img src="./assets/coin.png" class="w-5 h-5"></button>
+                <button class="btn border-none bg-[#41FF6B1A] rounded-3xl font-bold"><span id="coinCount">100</span><img src="./assets/coin.png" class="w-5 h-5"></button>
                 <button class="btn border-none bg-[#00A63E] rounded-3xl text-white">2 Copy</button>
             </div>
         </div>
@@ -50,7 +50,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-auto">
 
             <!-- card_1 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -61,12 +61,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">All</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_2 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/police.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -77,12 +77,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Police</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_3 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/fire-service.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -93,12 +93,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Fire</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_4 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/ambulance.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -109,12 +109,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Health</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_5 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/women-support.png" class="w-18 h-12 -ml-5">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -125,12 +125,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Help</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_6 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Anti-Corruption_Helpline.png" class="w-15 h-10 -ml-3">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -141,12 +141,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Govt.</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_7 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/electric.png" class="w-15 h-10 -ml-3">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -157,12 +157,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Electricity</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_8 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/brac.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -173,12 +173,12 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">NGO</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
             <!-- card_9 -->
-            <div class="bg-white shadow-lg rounded-xl p-4">
+            <div class="contact_card bg-white shadow-lg rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Bangladesh-Railway.png" class="w-10 h-10">
                     <button class="text-gray-400 w-10 h-10 heartBtn"><i class="fa-regular fa-heart"></i></button>
@@ -189,7 +189,7 @@
                 <span class="hind_madurai_font inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full mt-1">Travel</span>
                 <div class="grid grid-cols-2 mt-4 gap-3">
                     <button class="btn agbalumo_font border-2 rounded-lg px-4 py-1 agbalumo_font text-sm text-gray-600 hover:bg-gray-500"><i class="fa-regular fa-clone"></i><span>Copy</span></button>
-                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700"><i class="fa-solid fa-phone"></i><span>Call</span></button>
+                    <button class="btn agbalumo_font bg-[#00A63E] text-white px-4 py-1  rounded-lg text-sm hover:bg-green-700 callBtn"><i class="fa-solid fa-phone"></i><span>Call</span></button>
                 </div>
             </div>
 
