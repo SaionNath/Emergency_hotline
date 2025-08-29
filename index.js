@@ -3,7 +3,7 @@
 const currentCount = document.getElementById("heartCount")
 
 document.querySelectorAll(".heartBtn").forEach(btn => {
-    btn.addEventListener("click", function(e){
+    btn.addEventListener("click", function(){
         // e.preventDefault()
     // console.log("heart clicked");
 
@@ -19,11 +19,11 @@ const history_container = document.querySelector("#call_history")
 const clear_btn = document.querySelector("#clear_history_btn")
 
 document.querySelectorAll(".callBtn").forEach(btn => {
-    btn.addEventListener("click", function(e){
+    btn.addEventListener("click", function(){
         
         let coins = parseInt(coin_count.innerText)
 
-        if(coins > 20){
+        if(coins > 0){
             coins -= 20
             coin_count.innerText = coins
 
@@ -45,7 +45,7 @@ document.querySelectorAll(".callBtn").forEach(btn => {
                                         </div>
                                     </div>`
 
-            history_container.prepend(history_card);
+            history_container.append(history_card);
             
             alert(`📞${sub_title} ${number}`)
         }
@@ -59,3 +59,31 @@ document.querySelectorAll(".callBtn").forEach(btn => {
 clear_btn.addEventListener("click", () =>{
     history_container.innerHTML = "";
 });
+
+
+// copy count 
+const copyCounterBtn = document.querySelector("#copy_Counter_Btn")
+
+document.querySelectorAll(".copyBtn").forEach(btn =>{
+    btn.addEventListener("click", function(){
+
+        let current_Copy_Count = parseInt(copyCounterBtn.innerText) || 0
+        
+        current_Copy_Count++
+
+        copyCounterBtn.innerText = `${current_Copy_Count} Copy`
+
+        const card_details = btn.closest(".contact_card")
+
+        const phone = card_details.querySelectorAll("h2")[1].innerText
+
+        navigator.clipboard.writeText(phone).then(() => {
+            alert(`Number copied: ${phone}`)
+        })
+
+        .catch(err => {
+            console.error("Failed to copy: ", err)
+        })
+    })
+})
+
